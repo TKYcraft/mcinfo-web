@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     apiForm.addEventListener("submit", (event) => {
         event.preventDefault();
         const host = document.getElementById("host").value;
-        const apiUrl = `https://chisato.alicey.dev/api/v1/servers/status?host=${host}&sort=asc`;
+        const apiUrl = `https://chisato.alicey.dev/api/v1/servers/status?host=${host}&order=asc`;
 
         fetch(apiUrl)
             .then(response => {
